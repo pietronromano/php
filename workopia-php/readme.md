@@ -1,8 +1,8 @@
 # Workopia
+# Sources:
+- SOURCE: https://github.com/bradtraversy/workopia-php
+- COURSE: https://www.udemy.com/course/php-from-scratch-course
 
-
-SOURCE: https://github.com/bradtraversy/workopia-php
-COURSE: https://www.udemy.com/course/php-from-scratch-course
 
 Workopia is a job listing website from my [PHP From Scratch course](https://www.traversymedia.com/php-from-scratch). It includes a custom Laravel-like router, controller classes, views, a database layer and a project structure using namespaces and PSR-4 autoloading. It highlights how to structure a PHP project without using any frameworks or libraries.
 

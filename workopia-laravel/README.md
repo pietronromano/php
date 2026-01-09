@@ -1,7 +1,8 @@
 # Workopia (Laravel)
 
-SOURCE: https://github.com/bradtraversy/workopia-laravel
-COURSE: https://www.udemy.com/course/laravel-from-scratch
+Sources:
+- SOURCE: https://github.com/bradtraversy/workopia-laravel
+- COURSE: https://www.udemy.com/course/laravel-from-scratch
 
 Workopia is a job listing website built with Laravel 11. This is the main project from my Laravel From Scratch course.
 
