@@ -4,6 +4,8 @@ Uber repo for PHP examples and courses
 **References**:
 - PHP Manual: https://www.php.net/manual
 - Brad's Cheatsheet: https://www.devsheets.io/php
+- W3Techs - World Wide Web Technology Surveys: https://w3techs.com/ : 
+  - PHP is used by 72.4% of all websites in December 2025
 - Composer (dependency manager): https://getcomposer.org/download/
   - (See Composer section below)
 
