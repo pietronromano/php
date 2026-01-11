@@ -3,6 +3,7 @@ Uber repo for PHP examples and courses
 
 **References**:
 - PHP Manual: https://www.php.net/manual
+  - History of PHP: https://www.php.net/manual/en/history.php.php  
 - Brad's Cheatsheet: https://www.devsheets.io/php
 - W3Techs - World Wide Web Technology Surveys: https://w3techs.com/ : 
   - PHP is used by 72.4% of all websites in December 2025
