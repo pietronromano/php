@@ -4,8 +4,13 @@ $description = '';
 $submitted = false; // Flag to check if the form has been submitted
 
 if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
+  //var_dump('$_POST vars:', $_POST); // Debugging line to inspect the contents of $_POST
+
+  //Longer version:
   // $title = isset($_POST['title']) ? htmlspecialchars($_POST['title']) : '';
   // $description = isset($_POST['description']) ? htmlspecialchars($_POST['description']) : '';
+  
+  // Shorter version using null coalescing operator:
   $title = htmlspecialchars($_POST['title'] ?? '');
   $description = htmlspecialchars($_POST['description'] ?? '');
 

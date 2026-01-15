@@ -2,24 +2,24 @@
 $output = null;
 
 // Simple for loop
-// for ($i = 0; $i <= 10; $i++) {
-//     echo $i; 
-// }
+for ($i = 0; $i <= 10; $i++) {
+    echo $i; 
+}
 
 // Simple while loop
-// $i = 0;
-// while ($i < 10) {
-//     echo $i; 
-//     $i++;
-// }
+$i = 0;
+while ($i < 10) {
+    echo $i; 
+    $i++;
+}
 
 // Simple do...while loop
-// $i = 0;
+$i = 0;
 
-// do {
-//     echo $i; 
-//     $i++;
-// } while ($i < 10);
+do {
+    echo $i; 
+    $i++;
+} while ($i < 10);
 ?>
 
 <!DOCTYPE html>

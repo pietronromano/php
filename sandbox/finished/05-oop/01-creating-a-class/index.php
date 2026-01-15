@@ -28,4 +28,4 @@ $user2 = new User('Jane Doe', 'jane@gmail.com');
 
 $user2->login();
 
-// var_dump($user2);
+var_dump($user2);

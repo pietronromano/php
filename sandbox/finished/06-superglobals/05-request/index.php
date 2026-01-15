@@ -1,4 +1,6 @@
 <?php
+//NOTE: $_REQUEST is not recommended for production use due to security concerns.
+// It is better to use $_GET or $_POST explicitly based on the request method.
 echo $_REQUEST['name'] ?? ''; // Get query param
 
 $title = '';

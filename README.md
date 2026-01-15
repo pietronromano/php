@@ -1,7 +1,7 @@
 # php
 Uber repo for PHP examples and courses
 
-**References**:
+## References:
 - PHP Manual: https://www.php.net/manual
   - History of PHP: https://www.php.net/manual/en/history.php.php  
 - Brad's Cheatsheet: https://www.devsheets.io/php
@@ -10,8 +10,20 @@ Uber repo for PHP examples and courses
 - Composer (dependency manager): https://getcomposer.org/download/
   - (See Composer section below)
 
+### PHP Frameworks
+![PHP Frameworks](./best-php-frameworks.png)
 
-**My Kindle books**:
+References:
+- https://www.cloudways.com/blog/best-php-frameworks/
+- Laravel: https://laravel.com/
+- Symfony: https://symfony.com/
+- CodeIgniter: https://codeigniter.com/
+- Zend Framework / Laminas Project: https://getlaminas.org/
+- Yii: https://www.yiiframework.com/
+
+
+
+### My Kindle books
 - Mastering PHP Programming: A Comprehensive   Guide for BCA MCA and  Professionals VOL-I, by Mishra, Anshuman. 
 - Unlock PHP 8 From Basic to Advanced, Sommerfeld, Roni. 
 
@@ -116,7 +128,7 @@ cd /opt/homebrew/etc/php/8.5
 nano php.ini
 ```
 
-### Add Xdebug configuration:
+Add Xdebug configuration:
    ```ini
    [xdebug]
    zend_extension="xdebug.so"
@@ -135,7 +147,6 @@ In VS Code:
 ### Create launch.json
 
 Press ⌘+Shift+D, click "create a launch.json file", select PHP:
-
 ```json
 {
     "version": "0.2.0",
@@ -152,22 +163,23 @@ Press ⌘+Shift+D, click "create a launch.json file", select PHP:
 
 ### Start Debugging
 
+### Generic Debugging Steps
+1. Right click on the directory of your PHP file -> "Copy Relative Path"
+2. In VS Code terminal, CD to that directory
+3. Open the PHP file you want to debug.
+4. Set breakpoints by clicking left of line numbers.
+
 #### Debugging a script file
-1. Open the PHP file you want to debug.
-2. Set breakpoints by clicking left of line numbers.
-3. In top right of VS Code, Select the Debug Icon (play button with bug) -> "Debug PHP File"
-4. The debugger will pause at breakpoints, allowing you to inspect variables, step through code
-
-
+1. In top right of VS Code, Select the Debug Icon (play button with bug) -> "**Debug PHP File**"
+   The debugger will pause at breakpoints, allowing you to inspect variables, step through code
 
 #### Server-side Debugging
-
-1. Set breakpoints by clicking left of line numbers
-2. Start your PHP server (`php -S localhost:8000`)
-3. Press F5 or click "Start Debugging"
-4. Access your PHP page in browser
-
-The debugger will pause at breakpoints, allowing you to inspect variables, step through code, and evaluate expressions.
+1. Click the VS Code Debug Icon (play button with bug)
+2. Select "**Listen for Xdebug**"
+3. Set breakpoints by clicking left of line numbers
+4. In the terminal, start your PHP server (`php -S localhost:8000`)
+5. Open your browser and navigate to (or refresh if already open) `localhost:8000/yourpage.php`: 
+   The debugger will pause at breakpoints, allowing you to inspect variables, step through code
 
 ---
 

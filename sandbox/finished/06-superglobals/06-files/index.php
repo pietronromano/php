@@ -7,7 +7,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
   $title = htmlspecialchars($_POST['title'] ?? '');
   $description = htmlspecialchars($_POST['description'] ?? '');
 
-
+  // Handle file upload: we called the file input field 'logo'
   $file = $_FILES['logo'];
 
   if ($file['error'] === UPLOAD_ERR_OK) {
@@ -19,7 +19,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
       mkdir($uploadDir, 0755, true);
     }
 
-    // Create file name
+    // Create a unique file name to avoid overwriting existing files
     $filename = uniqid() . '-' . $file['name'];
 
     // Check file type
@@ -68,6 +68,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST' && isset($_POST['submit'])) {
         </div>
         <div class="mb-4">
           <label for="resume" class="block text-gray-700 font-medium">Logo</label>
+          <!-- Our file input, name "logo" -->
           <input type="file" id="logo" name="logo" class="w-full px-4 py-2 border rounded focus:ring focus:ring-blue-300 focus:outline-none">
         </div>
         <div class="flex items-center justify-between">
