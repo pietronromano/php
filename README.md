@@ -262,8 +262,13 @@ sudo apachectl restart
 apachectl configtest
 ```
 
-NOTE! On MacOS with Homebrew Apache (took me a *while* to find this out), the .conffile is located at: `/opt/homebrew/etc/httpd/httpd.conf`
+NOTE! On MacOS with Homebrew Apache (took me a *while* to find this out), the .conf file is located at: 
+```bash
+nano /opt/homebrew/etc/httpd/httpd.conf
+```
+NOTE: to see hidden file folders in Finder, use `CMD + SHIFT + . `
 
+Defaults:
 - Default Apache web root directory on MacOS: `/usr/local/var/www`
 - Default Apache configuration file on MacOS: `/usr/local/etc/httpd/httpd.conf`
 - For more details, refer to the official Apache documentation: https://httpd.apache.org/docs/

@@ -131,7 +131,7 @@ tail -f /opt/homebrew/var/log/httpd/error_log
 ```
 
 ### Set Permissions for the `writable` directory
-Avoid "CodeIgniter\Cache\Exceptions\CacheException Cache unable to write to" errors by setting the correct permissions for the `writable` directory:
+Avoid "*CodeIgniter\Cache\Exceptions\CacheException Cache unable to write to...*" errors by setting the correct permissions for the `writable` directory:
 ```bash
 writable_dir="/Users/macbookpro/dev/php/github/php/cogeigniter/01-introduction/ci-app/writable/"
 sudo chmod -R 755 $writable_dir 
