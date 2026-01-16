@@ -48,7 +48,7 @@ cd ci-app
 
 #### Configure Apache Virtual Host:
 NOTE! On MacOS with Homebrew Apache (took me a *while* to find this out), the file is located at:
-- `/opt/homebrew/etc/httpd/httpd.conf`
+`/opt/homebrew/etc/httpd/httpd.conf`
   
 NOTE:
 - To see hidden file folders in Finder, use `CMD + SHIFT + . `
@@ -63,10 +63,10 @@ Include /opt/homebrew/etc/httpd/extra/httpd-vhosts.conf
 - Set the `ServerName` directive to avoid warnings. Find the line that starts with `#ServerName` and change it to:
 ```
 # If your host doesn't have a registered DNS name, enter its IP address here.
-ServerName ciapp0.localhost:8080
+ServerName ciapp0.localhost
 ```
 
-- If using PHP with Apache, ensure the PHP module is loaded. Otherwise, Apache won't be able to process PHP files and will serve them as plain text.
+If using PHP with Apache, ensure the PHP module is loaded. Otherwise, Apache won't be able to process PHP files and will serve them as plain text.
 - Find and uncomment (or add) the following line:
 ```
 LoadModule php_module /opt/homebrew/opt/php@8.5/lib/httpd/modules/libphp.so
@@ -108,7 +108,7 @@ Restart Apache to apply the changes:
 sudo apachectl restart
 ```
 
-5. Verify PHP is loaded:
+1. Verify PHP is loaded:
 ```bash
 httpd -M | grep php
 ```
