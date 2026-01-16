@@ -41,6 +41,8 @@ cd ci-app
 
 - Stop the server by pressing `CTRL + C` in the terminal when you're done.
 
+---
+
 ### Apache
 [**OPTIONAL, BUT USED HERE**] You can also configure a local web server Apache to serve the `ci-app` project.
 - See [Uber readme](../README.md ) for Apache installation details.
@@ -67,7 +69,7 @@ ServerName ciapp0.localhost
 ```
 
 If using PHP with Apache, ensure the PHP module is loaded. Otherwise, Apache won't be able to process PHP files and will serve them as plain text.
-- Find and uncomment (or add) the following line:
+- Find and uncomment (or add) the following lines:
 ```
 LoadModule php_module /opt/homebrew/opt/php@8.5/lib/httpd/modules/libphp.so
 <IfModule php_module>
@@ -79,8 +81,10 @@ LoadModule php_module /opt/homebrew/opt/php@8.5/lib/httpd/modules/libphp.so
 
 - "AH01276: Cannot serve directory error": means Apache successfully accessed the directory, but couldn't find an index file to serve and directory listing is disabled.
 - Update the DirectoryIndex to include `index.php`. Find the line that starts with `DirectoryIndex` and change it to:
-```    DirectoryIndex index.php index.html
----
+```    
+DirectoryIndex index.php index.html
+```
+
 
 Edit the virtual hosts file located at: `/opt/homebrew/etc/httpd/extra/httpd-vhosts.conf`
 - Create a `logs` folder inside the `ci-app` directory to store log files:
