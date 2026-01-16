@@ -1,11 +1,11 @@
 <?php
 
 // Database configuration
-$host = 'localhost';
+$host = '127.0.0.1'; // NOTE: localhost didn't work from MacOS to Docker container
 $port = 3306;
 $dbName = 'blog';
 $username = 'root';
-$password = '';
+$password = 'Axml-xsl0123';
 
 // Connection string (DSN)
 $dsn = "mysql:host={$host};port={$port};dbname={$dbName};charset=utf8";
