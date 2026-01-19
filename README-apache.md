@@ -93,22 +93,22 @@ LoadModule rewrite_module lib/httpd/modules/mod_rewrite.so
 
 If getting *"AH01276: Cannot serve directory error"*: this means Apache successfully accessed the directory, but couldn't find an index file to serve and directory listing is disabled.
 - Update the DirectoryIndex to include `index.php`. Find the line that starts with `DirectoryIndex` and change add `index.php` like so:
-    ```    
-    DirectoryIndex index.php index.html
-    ```
+```    
+DirectoryIndex index.php index.html
+```
 
 
 - Edit the virtual hosts file: 
-    ```bash
-    code /opt/homebrew/etc/httpd/extra/httpd-vhosts.conf
-    ```
+```bash
+code /opt/homebrew/etc/httpd/extra/httpd-vhosts.conf
+```
 
 - Add the following configuration to the file:
 - NOTE: `DocumentRoot` must point to the `public` folder inside the `[myapp]` directory, the same applies to the `<Directory>` directive.
     ```apache
     <VirtualHost *:8080>
         DocumentRoot "/Users/macbookpro/dev/php/github/php/cogeigniter/deployment/[myapp]/"
-        ServerName   [myapp].localhost:8080
+        ServerName   [myapp].localhost
         ErrorLog     "/Users/macbookpro/dev/php/github/php/cogeigniter/deployment/logs/error_log"
         CustomLog    "/Users/macbookpro/dev/php/github/php/cogeigniter/deployment/logs/access_log" common
 
@@ -144,9 +144,8 @@ tail -f /opt/homebrew/var/log/httpd/error_log
 
 ---
 
-
 ### Access the Application
-In Browser, navigate to `http://[myapp].local:8080` to see the CodeIgniter welcome page.    
+In Browser, navigate to `http://[myapp].localhost:8080` to see the app start page.    
 
 
 
