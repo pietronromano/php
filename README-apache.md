@@ -98,7 +98,7 @@ DirectoryIndex index.php index.html
 ```
 
 
-- Edit the virtual hosts file: 
+### Edit the virtual hosts file 
 ```bash
 code /opt/homebrew/etc/httpd/extra/httpd-vhosts.conf
 ```
@@ -107,7 +107,7 @@ code /opt/homebrew/etc/httpd/extra/httpd-vhosts.conf
 - NOTE: `DocumentRoot` must point to the `public` folder inside the `[myapp]` directory, the same applies to the `<Directory>` directive.
     ```apache
     <VirtualHost *:8080>
-        DocumentRoot "/Users/macbookpro/dev/php/github/php/cogeigniter/deployment/[myapp]/"
+        DocumentRoot "/Users/macbookpro/dev/php/github/php/cogeigniter/deployment/[myapp]/public"
         ServerName   [myapp].localhost
         ErrorLog     "/Users/macbookpro/dev/php/github/php/cogeigniter/deployment/logs/error_log"
         CustomLog    "/Users/macbookpro/dev/php/github/php/cogeigniter/deployment/logs/access_log" common
