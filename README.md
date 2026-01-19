@@ -183,6 +183,7 @@ Press ⌘+Shift+D, click "create a launch.json file", select PHP:
 
 ---
 
+
 ## Composer - PHP Dependency Manager
 (Taken from Unlock PHP 8: see in this repo: unlock-php8/Composer.md )
 ### Install composer with linux
@@ -234,50 +235,4 @@ sudo chmod +x /usr/local/bin/composer
 composer
 ```
 
----
 
-## Apache Web Server 
-References:
-- Brad's Cheatsheet: https://www.devsheets.io/apache  
-
-### Install Apache on MacOS
-```bash
-brew install httpd
-```
-- Start Apache server
-```bash
-sudo apachectl start
-```
-- Stop Apache server
-```bash
-sudo apachectl stop
-```
-- Restart Apache server
-```bash
-sudo apachectl restart
-```
-
-- Test Apache Configuration
-```bash
-apachectl configtest
-```
-
-NOTE! On MacOS with Homebrew Apache (took me a *while* to find this out), the .conf file is located at: 
-```bash
-nano /opt/homebrew/etc/httpd/httpd.conf
-```
-NOTE: to see hidden file folders in Finder, use `CMD + SHIFT + . `
-
-Defaults:
-- Default Apache web root directory on MacOS: `/usr/local/var/www`
-- Default Apache configuration file on MacOS: `/usr/local/etc/httpd/httpd.conf`
-- For more details, refer to the official Apache documentation: https://httpd.apache.org/docs/
-
-
-### Install Apache on Windows using XAMPP:
-  1. Download and install XAMPP from https://www.apachefriends.org/index.html
-  2. Start the Apache server using the XAMPP Control Panel.
-  3. Default Apache web root directory in XAMPP: `C:\xampp\htdocs`
-  4. Default Apache configuration file in XAMPP: `C:\xampp\apache\conf\httpd.conf`
-
----

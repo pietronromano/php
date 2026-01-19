@@ -26,7 +26,8 @@ References:
 - **MySQL**: See my [Uber SQL DB](https://github.com/pietronromano/sql/mysql) for instructions on setting up a MySQL database.
 
 
-
-
 ### Install CodeIgniter
 Download CodeIgniter from the official website: https://codeigniter.com/download
+
+---
+
