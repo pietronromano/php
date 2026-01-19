@@ -108,7 +108,7 @@ If getting *"AH01276: Cannot serve directory error"*: this means Apache successf
     ```apache
     <VirtualHost *:8080>
         DocumentRoot "/Users/macbookpro/dev/php/github/php/cogeigniter/deployment/[myapp]/"
-        ServerName   ciapp.localhost:8080
+        ServerName   [myapp].localhost:8080
         ErrorLog     "/Users/macbookpro/dev/php/github/php/cogeigniter/deployment/logs/error_log"
         CustomLog    "/Users/macbookpro/dev/php/github/php/cogeigniter/deployment/logs/access_log" common
 
