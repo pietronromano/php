@@ -3,6 +3,14 @@
 References:
 - https://www.udemy.com/course/codeigniter-from-scratch/learn/lecture/39182468#overview
 
+CodeIgniter References:
+- https://codeigniter.com/user_guide/database/configuration.html
+- https://codeigniter.com/user_guide/database/metadata.html
+- https://codeigniter.com/user_guide/dbmgmt/migration.html
+- https://codeigniter.com/user_guide/dbmgmt/forge.html
+- https://codeigniter.com/user_guide/dbmgmt/migration.html#usage-example
+- https://codeigniter.com/user_guide/models/model.html#codeigniter-s-model
+
 ---
  
 ## Move to the project directory
@@ -45,8 +53,7 @@ fi
 
 ## Database Migrations
 References:
-- https://codeigniter.com/user_guide/dbmgmt/forge.html
-- https://codeigniter.com/user_guide/dbmgmt/migration.html
+- 
 
 
 ### Create a Migration File

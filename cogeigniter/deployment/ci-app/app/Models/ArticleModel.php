@@ -11,6 +11,9 @@ class ArticleModel extends Model
 
     protected $allowedFields = ["title", "content"];
 
+    // Specify the return type as the Article entity: note the full namespace, NOT surrounded by quotes
+    protected $returnType = \App\Entities\Article::class;
+
     // Validation rules for the model
     protected $validationRules = [
         "title" => "required|max_length[128]",

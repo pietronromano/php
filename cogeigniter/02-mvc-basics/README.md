@@ -3,6 +3,11 @@
 References:
 - https://www.udemy.com/course/codeigniter-from-scratch/learn/lecture/39182318#overview
 
+
+CodeIgniter Documentation:
+- https://codeigniter.com/user_guide/outgoing/view_layouts.html
+  
+
 ---
 
 ## Move to the project directory

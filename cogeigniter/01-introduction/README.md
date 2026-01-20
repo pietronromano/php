@@ -2,7 +2,19 @@
 
 References:
 - https://www.udemy.com/course/codeigniter-from-scratch/learn/lecture/39182226#overview
+
+CodeIgniter Documentation:
 - https://codeigniter.com/user_guide/installation/running.html#local-development-server
+- https://codeigniter.com/
+- https://codeigniter.com/user_guide/index.html
+- https://codeigniter.com/user_guide/installation/running.html
+- https://www.apachefriends.org/index.html
+- https://getcomposer.org/
+- https://codeigniter.com/user_guide/installation/index.html
+- https://codeigniter.com/user_guide/intro/requirements.html
+- https://codeigniter.com/user_guide/changelogs/index.html
+
+
 
 ---
 

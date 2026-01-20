@@ -20,14 +20,8 @@
     <!-- use the form helper, see BaseController: $helpers = ["form"]; -->
     <?= form_open("articles/create") ?>
 
-         <!-- old() function to repopulate form fields after validation errors -->
-        <label for="title">Title</label>
-        <input type="text" id="title" name="title" value="<?= old("title") ?>">
-
-        <label for="content">Content</label>
-        <textarea id="content" name="content"><?= old("content") ?></textarea>
-
-        <button>Save</button>
+            <!-- Uses the shared form for update and insert -->
+            <?= $this->include("Articles/form") ?>
 
     </form>
 <?= $this->endSection() ?>

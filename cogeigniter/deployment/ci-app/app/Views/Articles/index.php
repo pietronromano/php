@@ -12,10 +12,10 @@
      <!-- $articles argument is sent from the controller -->
      <?php foreach ($articles as $article): ?>
 
-        <!-- esc() function to escape output and prevent XSS (replaces PHP htmlspecialchars) -->
-        <article>
-            <h2><a href="<?= site_url('/articles/' . $article["id"]) ?>"><?= esc($article["title"]) ?></a></h2>
-            <p><?= esc($article["content"]) ?></p>
+         <article>
+            <!-- Now using the Article entity, so change from $article["title"] to $article->title -->
+            <h2><a href="<?= site_url('/articles/' . $article->id) ?>"><?= esc($article->title) ?></a></h2>
+            <p><?= esc($article->content) ?></p>
         </article>
 
     <?php endforeach; ?>

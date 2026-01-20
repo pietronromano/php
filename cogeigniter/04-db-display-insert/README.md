@@ -56,57 +56,15 @@ fi
 
 ---
 
-## Database Migrations
+
 References:
-- https://codeigniter.com/user_guide/dbmgmt/forge.html
-- https://codeigniter.com/user_guide/dbmgmt/migration.html
-
-
-### Create a Migration File
-```bash
-php spark make:migration CreateArticleTable
-
-- OUTPUT:
-
-  CodeIgniter v4.6.4 Command Line Tool - Server Time: 2026-01-18 15:58:38 UTC+00:00
-
-  File created: APPPATH/Database/Migrations/2026-01-18-155838_CreateArticleTable.php
-```
-
-###  Run the Migration
-Recommended method is to use the CLI command as it gives better feedback than using the web interface via a controller.
-```bash
-php spark migrate
-
-- OUTPUT:
-  Running all new migrations...
-  Running: (App) 2026-01-18-155838_App\Database\Migrations\CreateArticleTable
-  Migrations complete.
-  
-```
-We can see the tables created in the datbase using MySQLWorkbench or any database management tool:
- - articles
- - migrations
-
-### Insert Sample Data into the Articles Table
-In MySQLWorkbench, run the following SQL commands to insert sample data into the `articles` table:
-```SQL
-USE ci4;
-INSERT INTO article (title, content) VALUES
-('First Article', 'This is the content of the first article.'),
-('Second Article', 'This is the content of the second article.'),
-('Third Article', 'This is the content of the third article.');
-
-SELECT * FROM article;
-```
-
----
-
-### Debugging
-
-- In the Browser: use the CodeIgniter Debugging toolbar to inspect queries and see variables passed to the view.
-- use the `log_message('info', 'Your debug message here');` function to log messages to the log files located in `writable/logs/`.
-- use `dd($variable);` to dump and die, which is useful for inspecting variables during development.
-   
+- https://codeigniter.com/user_guide/incoming/routing.html#placeholders
+- https://codeigniter.com/user_guide/models/model.html#working-with-data
+- https://codeigniter.com/user_guide/helpers/url_helper.html#site_url
+- https://codeigniter.com/user_guide/incoming/routing.html#reverse-routing
+- https://codeigniter.com/user_guide/helpers/form_helper.html
+- https://watercss.kognise.dev/
+- https://codeigniter.com/user_guide/models/model.html#saving-data
+- https://codeigniter.com/user_guide/models/model.html#allowedfields
 
 

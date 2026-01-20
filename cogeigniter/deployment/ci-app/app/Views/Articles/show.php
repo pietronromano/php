@@ -4,9 +4,13 @@
 
 <?= $this->section("content") ?>
 
-    <!-- esc() function to escape output and prevent XSS (replaces PHP htmlspecialchars) -->
-    <h1><?= esc($article["title"]) ?></h1>
+    <!-- now using the Article entity, so change from $article["title"] to $article->title -->
+    <h1><?= esc($article->title) ?></h1>
 
-    <p><?= esc($article["content"]) ?></p>
+    <p><?= esc($article->content) ?></p>
+
+    <a href="<?= url_to("Articles::edit", $article->id) ?>">Edit</a>
+
+    <a href="<?= url_to("Articles::delete", $article->id) ?>">Delete</a>
 
 <?= $this->endSection() ?>
