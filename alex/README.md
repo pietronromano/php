@@ -18,7 +18,7 @@ Sections:
 
 ---
 
-## Codeigniter from Scratch
+## 2. Codeigniter from Scratch
 Based on Dave Hollingworth's "Codeigniter from Scratch" course on Udemy.
 1. Introduction: 13 mins
 2. Basics & MVC: 20 mins
