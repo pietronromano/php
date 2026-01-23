@@ -7,11 +7,12 @@ Uber repo for PHP examples and courses
 - Brad's Cheatsheet: https://www.devsheets.io/php
 - W3Techs - World Wide Web Technology Surveys: https://w3techs.com/ : 
   - PHP is used by 72.4% of all websites in December 2025
+  - PHP is more popular among small to mid-sized companies - because it's quick to develop with (Brad Traversy)
 - Composer (dependency manager): https://getcomposer.org/download/
   - (See Composer section below)
 
 ### PHP Frameworks
-![PHP Frameworks](./best-php-frameworks.png)
+![PHP Frameworks](./docs/best-php-frameworks.png)
 
 References:
 - https://www.cloudways.com/blog/best-php-frameworks/

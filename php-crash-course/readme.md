@@ -1,4 +1,4 @@
-# PHP Crash Course Files
+# PHP Crash Course : Brad Traversy
 
 Sources:
 - SOURCE: https://github.com/bradtraversy/php-crash
