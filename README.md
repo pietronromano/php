@@ -78,7 +78,9 @@ References:
 References:
 - Brad Traversy: https://www.udemy.com/course/php-from-scratch-course/learn/lecture/41057064#overview
 
-`Laragon` is a more modern solution than XAMPP and WAMP.
+`Laragon` is a more modern solution than XAMPP and WAMP. It includes Apache, MySQL, PHP, Cmder (a third-party bash terminal) and more in a lightweight package:
+- Apache 2.4, Nginx, MySQL 9.4/8.4, PHP 8.4/8.3/8.2/8.1, Node.js 24/23/22, Python 3.13, Redis, Memcached, PostgreSQL 18/17/16/15, npm, git.
+
 
 Install via `Laragon` on Windows:
 1. Download and install Laragon from https://laragon.org/download/
