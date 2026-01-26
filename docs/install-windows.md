@@ -8,6 +8,7 @@ References:
 
 Install via `Laragon` on Windows:
 1. Download and install Laragon from https://laragon.org/download/
+   - NOTE: For managing license, go to https://app.lemonsqueezy.com/my-orders/login
 2. During installation, select PHP as one of the components.
 3. After installation, start Laragon and use the built-in terminal to run PHP commands.
 
@@ -18,14 +19,50 @@ Install via `Laragon` on Windows:
 
     ![laragon](./laragon-tools.png)
 
+5. Install **PHP 8.4**
+   - Tools -> Quick add -> PHP 8.4
+
+
+### Default Laragon Page
+After installing Laragon, if you navigate to http://localhost, this the default page:
+    ![laragon](./laragon-defaultpage.png)
+
+You can change the default port from within the Laragon UI:
+
+**NOTE**: It often takes several restarts / reloads for Apache to update and to get the new port to work.
+
+---
 
 ### Creating Virtual Hosts with Laragon
-- Apache root is c:\laragon\www
+- Apache default root is `c:\laragon\www` (can be changed from Laragon UI)
 - Create a sub-folder `test-app`
 - Restart Apache (will get a message "App making changes - Virtual host") 
-- Can now will access on:
+- Can now access on:
     - http://localhost/test-app
     - http://test-app.test
+
+
+---
+
+### Install MySQL and phpMyAdmin
+In the Laragon UI, activate MySQL.
+
+NOTE: the default user is `root` with a blank password
+
+You can then click on the Database button to open **HeidiSQL**:
+- Click on the users icon to add a user to the db: pietronromano
+- In Cmnder:
+   - mysql -u pietronromano -p
+   - You will be prompted for the pwd
+
+
+#### Install phpMyAdmin
+Go to Tools -> Quick add -> phpmyadmin-6.0snapshot
+    ![laragon](./laragon-phpmyadmin.png)
+
+After that, the MyAdmin UI is available via web on localhost:[port]:
+- http://localhost:8080/phpmyadmin6/public/index.php?route=/
+
 
 
 ---
@@ -60,7 +97,8 @@ composer
 
 ## VS Code Extensions for PHP
 - **PHP Intelephense**: Provides advanced PHP language features like code completion, linting, and more.
-- **PHP Debug**: Adds support for debugging PHP code using Xdebug.
+- **PHP Debug**: Adds support for debugging PHP code using Xdebug:
+   - SEE below for detailed instructions on installing Xdebug on Windows.
 - **PHP DocBlocker**: Helps in generating PHPDoc comments for your functions and classes.
    - Usage: Type `/**` above a function or class and press Enter to auto-generate a DocBlock.
 - **PHP Namespace Resolver**: Assists in managing and importing PHP namespaces.
@@ -75,10 +113,10 @@ References:
 - https://xdebug.org/docs/install 
 - Mostly ok: https://pen-y-fan.github.io/2021/08/03/How-to-Set-up-VS-Code-to-use-PHP-with-Xdebug-3-on-Windows/
 
-MY specific steps:
-- Go to https://xdebug.org/download, download the correct php version (e.g. 8.4, nts)
+*MY* specific steps:
+- Go to https://xdebug.org/download, download the correct php version (e.g. 8.4, **nts**)
 - Confirm/allow the download in the Browser if it doesn't complete automatically
-- Copy the dll (php_xdebug-3.5.0-8.4...) to c:\laragon\php\php-8.4.... (Tip: Use Laragon to open this folder using: Menu > PHP > dir:ext)
+- Copy the dll (php_xdebug-3.5.0-8.4...) to c:\laragon\php\php-8.4....\ext (Tip: Use Laragon to open this folder using: Menu > PHP > dir:ext)
 - Next add Xdebug configuration to php.ini:
    - Laragon Menu > PHP > php.ini
    - Wait for php.ini to open with Notepad++, scroll to the bottom of the file and add the exact name of the .dll:
@@ -90,7 +128,7 @@ MY specific steps:
       xdebug.client_port=9003
    ```
 
-- Back in Laragon verify xdebug is activated with:
+- Back in Laragon, verify xdebug is activated by either of these methods:
    - The Xdebug extension: Menu > PHP > Quick settings > ☑ xdebug (note it wouldn't let me check/uncheck this )
    - the Cmder terminal:
       ```bash
@@ -105,7 +143,7 @@ MY specific steps:
 
 ---
 
-### Generic Debugging Steps
+### VS Code Debugging Steps
 1. Right click on the directory of your PHP file -> "Copy Relative Path"
 2. In VS Code terminal, CD to that directory
 3. Open the PHP file you want to debug.

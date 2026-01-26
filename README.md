@@ -31,8 +31,22 @@ References:
 ---
 
 ## How to setup PHP environment
-- MacOS: see [install-macos.m](./docs/install-macos.md)
+- MacOS: see [install-macos.md](./docs/install-macos.md)
 - Windows: see [install-windows.md](./docs/install-windows.md)
+
+---
+
+## VS Code
+Run selected text in Active Terminal: To Configure:
+- CTRL|CMD+SHIFT+P
+    - Type"Preferences: Run Selected Text in Active Terminal"
+    - Click on the Configuration icon
+    
+- Remove other associated Keys:
+  - Press Keys:
+  - On Windows: CTRL+E, 
+  - On MAC: CMD+SHIFT+E
+
 
 
 
