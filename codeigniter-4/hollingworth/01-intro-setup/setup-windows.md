@@ -6,6 +6,7 @@ After cloning from GitHub, We need to regenerate the `vendor`folder again (simil
 - In the terminal, navigate to the `ci-app` directory if you're not already there:
     ```bash
     cd codeigniter-4/hollingworth/01-intro-setup/ci-app
+    composer install
     ```
 ---
 
