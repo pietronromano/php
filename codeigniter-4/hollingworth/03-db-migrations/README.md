@@ -13,21 +13,11 @@ CodeIgniter References:
 
 ---
  
-## Move to the project directory
+## Move to the project directory and regenerate the vendor folder
 ```bash
-cd codeigniter/03-db-migrations/ci-app
+cd codeigniter-4/hollingworth/03-db-migrations/ci-app
+composer install
 
-``` 
-
-## Run the built-in PHP Server
-- In the terminal, navigate to the `ci-app` directory if you're not already there:
-- Start the built-in PHP server:
-    ```bash
-    php spark serve
-    ```
-  - Open your web browser and navigate to `http://localhost:8081` to see the CodeIgniter welcome page.
-
-- Stop the server by pressing `CTRL + C` in the terminal when you're done.
 
 ---
 
@@ -40,7 +30,7 @@ cd codeigniter/03-db-migrations/ci-app
 **`.env` File**
 - Open the `.env` file located in the root directory of your project.
 
-**Run MySQL Docker Container**
+**Run with a MySQL Docker Container**
 ```bash
 if [ "$(docker container ls -aq -f name=mysql-container)" ]; then
   echo "MySQL container already exists. Starting the container..."
@@ -53,17 +43,8 @@ fi
 ---
 
 ## Create the Database
-In MySQLWorkbench or phpMyAdmin, create a database called `ci4`. Leave it empty, without tables, for now 
+In MySQLWorkbench or phpMyAdmin, create a database called `ci4`. Leave it empty, without tables, for now. 
 
-
-## Move to the project directory
-```bash
-cd codeigniter-4/hollingworth/03-db-migrations/ci-app
-``` 
-
-```cmd
-cd codeigniter-4\hollingworth\03-db-migrations\ci-app
-```
 
 
 ### Create a Migration File
@@ -105,6 +86,18 @@ SELECT * FROM article;
 ```
 
 ---
+
+
+## Run the built-in PHP Server
+- In the terminal, navigate to the `ci-app` directory if you're not already there:
+- Start the built-in PHP server:
+```bash
+php spark serve
+```
+  - Open your web browser and navigate to `http://localhost:8080/articles` to see the articles page.
+
+- Stop the server by pressing `CTRL + C` in the terminal when you're done.
+
 
 ### Debugging
 

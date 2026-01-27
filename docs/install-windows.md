@@ -33,6 +33,16 @@ You can change the default port from within the Laragon UI:
 
 ---
 
+### Add Laragon to Windows Path
+In order to be able to run PHP from any terminal, not just the Laragon Cmnder terminal, we need to add the Laragon installation to our path:
+    ![laragon](./laragon-path.png)
+
+The results can be seen from the Path menu, and also by searching windows for "Environment Variables":
+       ![laragon](./laragon-path-env.png)
+
+---
+
+
 ### Creating Virtual Hosts with Laragon
 - Apache default root is `c:\laragon\www` (can be changed from Laragon UI)
 - Create a sub-folder `test-app`
@@ -47,12 +57,14 @@ You can change the default port from within the Laragon UI:
 ### Install MySQL and phpMyAdmin
 In the Laragon UI, activate MySQL.
 
-NOTE: the default user is `root` with a blank password
+NOTE: the default user is `root` with a blank password: changing that is **risky** as if it goes wrong, we have to reinstall Laragon.
 
-You can then click on the Database button to open **HeidiSQL**:
-- Click on the users icon to add a user to the db: pietronromano
-- In Cmnder:
-   - mysql -u pietronromano -p
+You can then click on the `Database` button to open **HeidiSQL**:
+- Click on the users icon to add users (pietronromano|alex) to the db: pietronromano|alex
+- In Cmnder, login with the -p option to be prompted for a password:
+   ```bash
+   mysql -u pietronromano|alex -p
+   ```
    - You will be prompted for the pwd
 
 

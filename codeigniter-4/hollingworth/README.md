@@ -4,7 +4,7 @@ https://www.udemy.com/course/codeigniter-from-scratch/learn/lecture/39182226#ove
 
 ## NOTE:
 - See 01-introduction for setup details
-- Completed up to section 09-customize-shield
+- Completed and working on Windows and MacOS up to section 07-autorouting-rest
 
 
 ---

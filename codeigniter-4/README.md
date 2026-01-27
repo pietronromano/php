@@ -25,5 +25,6 @@ Codigniter References:
 
 
 ### Install CodeIgniter
-See this file for spp specifi instructions: codeigniter-4\hollingworth\01-introduction\README.md
-Download CodeIgniter from the official website: https://codeigniter.com/download
+Download CodeIgniter from the official website: https://codeigniter.com/download.
+
+See the [Hollingworth course](hollingworth/01-intro-setup/README.md) for specific instructions.

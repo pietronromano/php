@@ -12,7 +12,7 @@ CodeIgniter Documentation:
 
 ## Move to the project directory
 ```bash
-cd codeigniter/02-mvc-basics/ci-app
+cd codeigniter-4/hollingworth/02-mvc-basics/ci-app
 
 ``` 
 
@@ -29,10 +29,11 @@ cd codeigniter/02-mvc-basics/ci-app
 ## Run the built-in PHP Server
 - In the terminal, navigate to the `ci-app` directory if you're not already there:
 - Start the built-in PHP server:
-    ```bash
-    php spark serve
-    ```
-  - Open your web browser and navigate to `http://localhost:8080` to see the CodeIgniter welcome page.
+```bash
+php spark serve
+```
+
+- Open your web browser and navigate to `http://localhost:8080` to see the CodeIgniter welcome page.
 
 - Stop the server by pressing `CTRL + C` in the terminal when you're done.
 

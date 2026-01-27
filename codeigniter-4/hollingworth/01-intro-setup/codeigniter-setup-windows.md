@@ -20,8 +20,8 @@ After that, we have two options:
 ### Configure the project with the .env file
 - Open the `.env` file
   - Set the environment `app.baseURL`
-    ...
-    app.baseURL = 'http://localhost:8080/ '
+    ```
+    app.baseURL = 'http://localhost:8080/'
     ```
 - Save the file.
 

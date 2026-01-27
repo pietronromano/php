@@ -13,7 +13,7 @@ CodeIgniter Documentation:
  
 ## Install Shield Authentication Library
 ```bash
-cd /Users/macbookpro/dev/php/github/php/codeigniter-4/hollingworth/08-install-shield/ci-app
+cd codeigniter-4/hollingworth/08-install-shield/ci-app
 composer require codeigniter4/shield
 ```
 
@@ -55,6 +55,37 @@ service('auth')->routes($routes);
 Now we can navigate to `/register` to create a new user, and then to `/login` to log in.
 
 ---
+
+### Emails
+NOTE: haven't configured emails: so will get an exception when creating a user or logging in
+```.env
+# EMAIL: NOTE: You need to set up a real SMTP server to send emails.
+# email.SMTPHost = smtp.example.com
+# email.SMTPUser = user@example.com
+# email.SMTPPass = your-password
+# email.SMTPPort = 587
+```
+
+## Move to the project directory and regenerate the vendor folder
+```bash
+cd codeigniter-4/hollingworth/08-install-shield/ci-app
+composer install
+``` 
+
+## Run the built-in PHP Server
+- In the terminal, navigate to the `ci-app` directory if you're not already there:
+- Start the built-in PHP server:
+```bash
+php spark serve
+```
+
+- Open your web browser and navigate to `http://localhost:8080/articles` to see the CodeIgniter articles page.
+
+- Stop the server by pressing `CTRL + C` in the terminal when you're done.
+
+---
+
+## MacOS with Apache
 
 ### Copy files to the deployment folder
 **NOTE:**: on macOS use "**Bash**", not the default "Zsh" terminal shell, as `cp -R` behaves differently in Zsh (omits the hidden files lie `.env`).
