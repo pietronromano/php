@@ -53,7 +53,11 @@ class Paths
      * for maximum security, keeping it out of the app and/or
      * system directories.
      */
+     
+    //MY OPTIONS: default (for Windows with indiviual projects) OR my custom path (for Mac with all projects in one folder)
     public string $writableDirectory = __DIR__ . '/../../writable';
+    //public string $writableDirectory = '/Users/macbookpro/dev/php/github/php/codeigniter-4/hollingworth/deployment/writable';
+
 
     /**
      * ---------------------------------------------------------------

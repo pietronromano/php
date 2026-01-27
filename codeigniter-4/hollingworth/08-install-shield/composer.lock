@@ -83,7 +83,7 @@
                 "codeigniter4/authentication-implementation": "1.0"
             },
             "require-dev": {
-                "codeigniter/phpstan-codeigniter": "^1.3",
+                "codeigniter-4/hollingworth/phpstan-codeigniter": "^1.3",
                 "codeigniter4/devkit": "^1.3",
                 "codeigniter4/framework": ">=4.3.5 <4.5.0 || ^4.5.1",
                 "firebase/php-jwt": "^6.4",

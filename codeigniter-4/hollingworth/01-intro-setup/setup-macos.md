@@ -7,7 +7,7 @@ Assuming starting from:
 `/Users/macbookpro/dev/php/github/php/`
 
 ```bash
-cd codeigniter/deployment
+cd codeigniter-4/hollingworth/deployment
 composer create-project codeigniter4/appstarter ci-app
 cd ci-app
 ``` 
