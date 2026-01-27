@@ -106,23 +106,23 @@ With a Laragon installation:
 
 
 ### The `httpd.conf` file
-- Open the virtual hosts file 
+Open the virtual hosts file :
 ```bash
 code "C:\laragon\bin\apache\httpd-2.4.62-240904-win64-VS17\conf\httpd.conf"
 ```
 
-- Change the listening port from 80 to 8080
+Change the listening port from 80 to 8080:
 ```
 Listen 8080
 ```
 
-- Uncomment the include for virtual hosts by removing the `#` at the beginning of the line:
+Uncomment the include for virtual hosts by removing the `#` at the beginning of the line:
 ```
 # Virtual hosts
 Include conf/extra/httpd-vhosts.conf
 ```
 
-- The `ServerName` directive is pre-set by Laragon to Laragon itself
+The `ServerName` directive is pre-set by Laragon to Laragon itself
 
 ### Modules
 NOTE: with Laragon installation, the php module isn't installed... so **no need
