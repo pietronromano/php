@@ -76,7 +76,7 @@ public string $writableDirectory = '/Users/macbookpro/dev/php/github/php/codeign
 ## Setup CodeIgniter 4 with Apache Web Server
 
 You can also configure a local web server Apache to serve your [myapp] project.
-- See [Uber readme](../README.md ) for initial Apache installation details.
+- See [install-macos](../../../docs/install-macos.md ) for initial Apache installation details.
 - See the lesson for details: https://www.udemy.com/course/codeigniter-from-scratch/learn/lecture/39182242#overview
 
 ---
