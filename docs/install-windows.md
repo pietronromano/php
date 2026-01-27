@@ -35,10 +35,10 @@ You can change the default port from within the Laragon UI:
 
 ### Add Laragon to Windows Path
 In order to be able to run PHP from any terminal, not just the Laragon Cmnder terminal, we need to add the Laragon installation to our path:
-    ![laragon](./laragon-path.png)
+    ![laragon](images/laragon-path.png)
 
 The results can be seen from the Path menu, and also by searching windows for "Environment Variables":
-       ![laragon](./laragon-path-env.png)
+       ![laragon](images/laragon-path-env.png)
 
 ---
 
