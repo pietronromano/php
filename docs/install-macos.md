@@ -40,6 +40,47 @@ References:
 
 ---
 
+
+## Apache Web Server on MacOS 
+References:
+- Brad's Cheatsheet: https://www.devsheets.io/sheets/apache
+
+## Install Apache 
+```bash
+brew install httpd
+```
+- Start Apache server
+```bash
+sudo apachectl start
+```
+- Stop Apache server
+```bash
+sudo apachectl stop
+```
+- Restart Apache server
+```bash
+sudo apachectl restart
+```
+
+- Test Apache Configuration
+```bash
+apachectl configtest
+```
+
+NOTE! On MacOS with Homebrew Apache (took me a *while* to find this out), the `.conf` file is located at: 
+```bash
+code /opt/homebrew/etc/httpd/httpd.conf
+```
+NOTE: to see hidden file folders in MacOS Finder, use `CMD + SHIFT + . `
+
+ApacheDefaults:
+- Default Apache web root directory on MacOS: `/usr/local/var/www`
+- Default Apache configuration file on MacOS: `/usr/local/etc/httpd/httpd.conf`
+- For more details, refer to the official Apache documentation: https://httpd.apache.org/docs/
+
+
+---
+
 ## VS Code Extensions for PHP
 - **PHP Intelephense**: Provides advanced PHP language features like code completion, linting, and more.
 - **PHP Debug**: Adds support for debugging PHP code using Xdebug.

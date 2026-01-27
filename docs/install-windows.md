@@ -12,12 +12,12 @@ Install via `Laragon` on Windows:
 2. During installation, select PHP as one of the components.
 3. After installation, start Laragon and use the built-in terminal to run PHP commands.
 
-    ![laragon](./laragon-setup.png)
-    ![laragon](./laragon-config.png)
+    ![laragon](images/laragon-setup.png)
+    ![laragon](images/laragon-config.png)
 
 4. You can add tools by right-clicking the dialog:
 
-    ![laragon](./laragon-tools.png)
+    ![laragon](images/laragon-tools.png)
 
 5. Install **PHP 8.4**
    - Tools -> Quick add -> PHP 8.4
@@ -25,7 +25,7 @@ Install via `Laragon` on Windows:
 
 ### Default Laragon Page
 After installing Laragon, if you navigate to http://localhost, this the default page:
-    ![laragon](./laragon-defaultpage.png)
+    ![laragon](images/laragon-defaultpage.png)
 
 You can change the default port from within the Laragon UI:
 
@@ -58,7 +58,7 @@ You can then click on the Database button to open **HeidiSQL**:
 
 #### Install phpMyAdmin
 Go to Tools -> Quick add -> phpmyadmin-6.0snapshot
-    ![laragon](./laragon-phpmyadmin.png)
+    ![laragon](images/laragon-phpmyadmin.png)
 
 After that, the MyAdmin UI is available via web on localhost:[port]:
 - http://localhost:8080/phpmyadmin6/public/index.php?route=/

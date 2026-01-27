@@ -39,7 +39,7 @@ To verify that we're seeing the right pages, change the CodeIgniter welcome mess
 
 
 ### Continue with OS Specific Instructions
-- MacOS: see [setup-macos.md](./setup-macos.md)
-- Windows: see [setup-windows.md](.setup-windows.md)
+- MacOS: see [codeigniter-setup-macos.md](./codeigniter-setup-macos.md)
+- Windows: see [codeigniter-setup-windows.md](./codeigniter-setup-windows.md)
 
  

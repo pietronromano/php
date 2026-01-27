@@ -12,7 +12,7 @@ Uber repo for PHP examples and courses
   - (See Composer section below)
 
 ### PHP Frameworks
-![PHP Frameworks](./docs/best-php-frameworks.png)
+![PHP Frameworks](./docs/images/best-php-frameworks.png)
 
 References:
 - https://www.cloudways.com/blog/best-php-frameworks/
@@ -30,14 +30,15 @@ References:
 
 ---
 
-## How to setup PHP environment
+## How to setup a PHP environment
 - MacOS: see [install-macos.md](./docs/install-macos.md)
 - Windows: see [install-windows.md](./docs/install-windows.md)
 
 ---
 
-## VS Code
-Run selected text in Active Terminal: To Configure:
+
+## VS Code: Run selected text in Active Terminal
+To Configure:
 - CTRL|CMD+SHIFT+P
     - Type"Preferences: Run Selected Text in Active Terminal"
     - Click on the Configuration icon

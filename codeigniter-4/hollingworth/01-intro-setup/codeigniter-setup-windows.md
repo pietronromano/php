@@ -44,9 +44,9 @@ After that, we have two options:
 ### Create www project root
 - In VS Code, open a Git Bash terminal
 - Create  your project root: 
-  ```bash
-  cd /c/laragon/www
-  mkdir ci-app
+```bash
+cd /c/laragon/www
+mkdir ci-app
   ```
 - In Laragon UI, Right Click -> www -> ci-app: the url shows
   - http://ci-app.test:8080/ -> opens automatically
@@ -85,14 +85,14 @@ public string $writableDirectory = '/c/laragon/www/ci-app/writable';
 
 ### Copy files to the deployment folder
 - Set origin folder:
-  ```bash
-  origin_dir="/c/dev/php/php/codeigniter-4/hollingworth/01-intro-setup/ci-app"
-  ```
+```bash
+origin_dir="/c/dev/php/php/codeigniter-4/hollingworth/01-intro-setup/ci-app"
+```
 
 - Copy the contents of the `ci-app/*` folder to the `www/ci-app` folder:
-  ```bash
-  cp -R $origin_dir/* "/c/laragon/www/ci-app/"
-  ```
+```bash
+cp -R $origin_dir/* "/c/laragon/www/ci-app/"
+```
 
 ---
 
@@ -112,29 +112,29 @@ code "C:\laragon\bin\apache\httpd-2.4.62-240904-win64-VS17\conf\httpd.conf"
 ```
 
 - Change the listening port from 80 to 8080
-    ```
-    Listen 8080
-    ```
+```
+Listen 8080
+```
 
 - Uncomment the include for virtual hosts by removing the `#` at the beginning of the line:
-    ```
-    # Virtual hosts
-    Include conf/extra/httpd-vhosts.conf
-    ```
+```
+# Virtual hosts
+Include conf/extra/httpd-vhosts.conf
+```
 
 - The `ServerName` directive is pre-set by Laragon to Laragon itself
 
 ### Modules
 NOTE: with Laragon installation, the php module isn't installed... so **no need
 for this** (it will give an error anyway):
-    ```conf
-    LoadModule php_module /opt/homebrew/opt/php@8.5/lib/httpd/modules/libphp.so
-    <IfModule php_module>
-        <FilesMatch \.php$>
-            SetHandler application/x-httpd-php
-        </FilesMatch>
-    </IfModule>
-    ```
+```conf
+LoadModule php_module /opt/homebrew/opt/php@8.5/lib/httpd/modules/libphp.so
+<IfModule php_module>
+    <FilesMatch \.php$>
+        SetHandler application/x-httpd-php
+    </FilesMatch>
+</IfModule>
+```
  
 Uncomment if not done already
 ```conf
@@ -156,19 +156,19 @@ code C:/laragon/bin/apache/httpd-2.4.62-240904-win64-VS17/conf/extra/httpd-vhost
 
 - Add the following configuration to the file:
 - NOTE: `DocumentRoot` must point to the `public` folder inside the `ci-app` directory, the same applies to the `<Directory>` directive.
-    ```apache
-    <VirtualHost *:8080>
-        DocumentRoot "C:\laragon\www\ci-app\public"
-        ServerName   ci-app.localhost
-        ErrorLog     "C:\laragon\www\ci-app\writable\logs\error_log"
-        CustomLog    "C:\laragon\www\ci-app\writable\logs\access_log" common
+```apache
+<VirtualHost *:8080>
+    DocumentRoot "C:\laragon\www\ci-app\public"
+    ServerName   ci-app.localhost
+    ErrorLog     "C:\laragon\www\ci-app\writable\logs\error_log"
+    CustomLog    "C:\laragon\www\ci-app\writable\logs\access_log" common
 
-        <Directory "C:\laragon\www\ci-app\public">
-            AllowOverride All
-            Require all granted
-        </Directory>
+    <Directory "C:\laragon\www\ci-app\public">
+        AllowOverride All
+        Require all granted
+    </Directory>
  </VirtualHost>
-    ```
+```
  
 
 Restart Apache to apply the changes:
@@ -195,7 +195,8 @@ To verify that we're seeing the right pages, change the CodeIgniter welcome mess
 
 ---
 
-### Install using XAMPP
+
+## NOT TRIED: Install using XAMPP
   1. Download and install XAMPP from https://www.apachefriends.org/index.html
   2. Start the Apache server using the XAMPP Control Panel.
   3. Default Apache web root directory in XAMPP: `C:\xampp\htdocs`
