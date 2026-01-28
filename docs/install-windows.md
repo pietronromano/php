@@ -6,20 +6,19 @@ References:
 `Laragon` is a more *modern* solution than XAMPP and WAMP. It includes Apache, MySQL, PHP, Cmder (a third-party bash terminal) and more in a lightweight package:
 - Apache 2.4, Nginx, MySQL 9.4/8.4, PHP 8.4/8.3/8.2/8.1, Node.js 24/23/22, Python 3.13, Redis, Memcached, PostgreSQL 18/17/16/15, npm, git, Composer...
 
-Install via `Laragon` on Windows:
+Install `Laragon` on Windows:
 1. Download and install Laragon from https://laragon.org/download/
    - NOTE: For managing license, go to https://app.lemonsqueezy.com/my-orders/login
-2. During installation, select PHP as one of the components.
-3. After installation, start Laragon and use the built-in terminal to run PHP commands.
+2. After installation, start Laragon and use the built-in Cmnder terminal to run PHP commands.
 
     ![laragon](images/laragon-setup.png)
     ![laragon](images/laragon-config.png)
 
-4. You can add tools by right-clicking the dialog:
+3. You can add tools by right-clicking the dialog:
 
     ![laragon](images/laragon-tools.png)
 
-5. Install **PHP 8.4**
+4. Install **PHP 8.4**
    - Tools -> Quick add -> PHP 8.4
 
 
@@ -79,7 +78,8 @@ After that, the MyAdmin UI is available via web on localhost:[port]:
 
 ---
 
-### Install just PHP on Windows:
+### Install just PHP on Windows
+This is my preferred option, and not needed if using Laragon, but if you want to install PHP manually on Windows:
 1. Download the latest PHP version from the official website: https://windows.php.net/download/
 2. Extract the downloaded ZIP file to a directory of your choice (e.g., `C:\php`).
 3. Add the PHP directory to your system's PATH environment variable.
