@@ -37,15 +37,15 @@ References:
 ---
 
 
-## VS Code: Run selected text in Active Terminal
+## VS Code: *Run selected text in Active Terminal*
+This allows selecting the commands in the .md file and running them, without having to copy them to the terminal.
 To Configure:
-- CTRL|CMD+SHIFT+P
-    - Type"Preferences: Run Selected Text in Active Terminal"
-    - Click on the Configuration icon
-    
-- Remove other associated Keys:
-  - Press Keys:
-  - On Windows: CTRL+E, 
+- Type CTRL|CMD+SHIFT+P
+- Type: "Preferences: Run Selected Text in Active Terminal"
+- When the option appears, click on the Configuration icon (on the right side)
+- Doble click on the Keybinding cell to edit it
+- Press Keys:
+  - On Windows: CTRL+E 
   - On MAC: CMD+SHIFT+E
 
 

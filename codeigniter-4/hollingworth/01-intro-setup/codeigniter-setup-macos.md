@@ -178,6 +178,7 @@ tail -f /opt/homebrew/var/log/httpd/error_log
 ### Access the Application
 In Browser, navigate to `http://[myapp].localhost:8080` to see the app start page.    
 
+To verify that we're seeing the right pages, change the CodeIgniter welcome message in `app/Views/welcome_message.php` and refresh the browser.
 
 ---
 

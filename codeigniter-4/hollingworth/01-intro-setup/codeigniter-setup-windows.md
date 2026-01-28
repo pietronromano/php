@@ -1,13 +1,16 @@
 # Windows Setup 
 
-## Regenerating
+## Regenerating Dependencies with Composer
 After cloning from GitHub, We need to regenerate the `vendor`folder again (similar to node_modules in nodejs): otherwise we will get an error indicating that this folder is missing.
 
-- In the terminal, navigate to the `ci-app` directory if you're not already there:
-    ```bash
-    cd codeigniter-4/hollingworth/01-intro-setup/ci-app
-    composer install
-    ```
+In the terminal, navigate to the `ci-app` directory if you're not already there.
+
+**NOTE**: We use the VS Code Git Bash terminal for these commands, to keep them consistent with the MacOS instructions and the Laragon Cmder terminal.
+
+```bash
+cd codeigniter-4/hollingworth/01-intro-setup/ci-app
+composer install
+```
 ---
 
 After that, we have two options:
@@ -16,6 +19,7 @@ After that, we have two options:
 
 
 ## Option 1: Run with the built-in PHP Server
+This is my preferred option for development, as it's simpler to set up and manage.
 
 ### Configure the project with the .env file
 - Open the `.env` file
@@ -34,13 +38,17 @@ After that, we have two options:
     php spark serve
     ```
 - Open your web browser and navigate to `http://localhost:8080` to see the CodeIgniter welcome page.
-- NOTE: Browsing works, even if terminal shows these sorts of messages: "[::1]:59760 Closing"
+- NOTE: Browsing in still works, even if the terminal shows these sorts of messages: "[::1]:59760 Closing"
 
 - Stop the server by pressing `CTRL + C` in the terminal when you're done.
+
+- To verify that we're seeing the right pages, change the CodeIgniter welcome message in `app/Views/welcome_message.php` and refresh the browser.
 
 ---
 
 ## Option 2: Run with Laragon/Apache
+This option involves setting up a virtual host in Apache using Laragon, and copying the project files to the Laragon web root.
+
 ### Create www project root
 - In VS Code, open a Git Bash terminal
 - Create  your project root: 
@@ -84,12 +92,12 @@ public string $writableDirectory = '/c/laragon/www/ci-app/writable';
 ```
 
 ### Copy files to the deployment folder
-- Set origin folder:
+Set origin folder:
 ```bash
 origin_dir="/c/dev/php/php/codeigniter-4/hollingworth/01-intro-setup/ci-app"
 ```
 
-- Copy the contents of the `ci-app/*` folder to the `www/ci-app` folder:
+Copy the contents of the `ci-app/*` folder to the `www/ci-app` folder:
 ```bash
 cp -R $origin_dir/* "/c/laragon/www/ci-app/"
 ```
@@ -125,8 +133,7 @@ Include conf/extra/httpd-vhosts.conf
 The `ServerName` directive is pre-set by Laragon to Laragon itself
 
 ### Modules
-NOTE: with Laragon installation, the php module isn't installed... so **no need
-for this** (it will give an error anyway):
+NOTE: on Windows, with the Laragon installation, the php module isn't installed... so **no need for this** (it will give an error anyway):
 ```conf
 LoadModule php_module /opt/homebrew/opt/php@8.5/lib/httpd/modules/libphp.so
 <IfModule php_module>
