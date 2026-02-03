@@ -2,14 +2,17 @@
 Uber repo for PHP examples and courses
 
 ## References:
-- PHP Manual: https://www.php.net/manual
+- **Java vs PHP**: https://www.tatvasoft.com/outsourcing/2024/04/java-vs-php.html
+- **PHP Manual**: https://www.php.net/manual
   - History of PHP: https://www.php.net/manual/en/history.php.php  
-- Brad's Cheatsheet: https://www.devsheets.io/php
-- W3Techs - World Wide Web Technology Surveys: https://w3techs.com/ : 
+- **Brad's Cheatsheet**: https://www.devsheets.io/php
+- **W3Techs - World Wide Web Technology Surveys**: https://w3techs.com/ : 
   - PHP is used by 72.4% of all websites in December 2025
   - PHP is more popular among small to mid-sized companies - because it's quick to develop with (Brad Traversy)
-- Composer (dependency manager): https://getcomposer.org/download/
+- **Composer** (dependency manager): https://getcomposer.org/download/
   - (See Composer section below)
+
+---
 
 ### PHP Frameworks
 ![PHP Frameworks](./docs/images/best-php-frameworks.png)
@@ -22,7 +25,7 @@ References:
 - Zend Framework / Laminas Project: https://getlaminas.org/
 - Yii: https://www.yiiframework.com/
 
-
+---
 
 ### My Kindle books
 - Mastering PHP Programming: A Comprehensive   Guide for BCA MCA and  Professionals VOL-I, by Mishra, Anshuman. 
