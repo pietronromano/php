@@ -1,4 +1,5 @@
 <?php
+echo 'my variables';
 /*
 VARIABLE RULES:
 - All variables are prefixed with a dollar sign ($).
@@ -24,7 +25,7 @@ CONVENTIONS:
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://cdn.tailwindcss.com"></script>
-    <title>Learn PHP From Scratch</title>
+    <title>Pietro Learn PHP From Scratch</title>
 </head>
 
 <body class="bg-gray-100">
